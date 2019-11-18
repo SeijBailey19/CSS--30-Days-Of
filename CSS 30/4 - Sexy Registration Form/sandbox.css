@@ -1,0 +1,138 @@
+/* ========================================
+
+    CODE YOUR STYLES BELOW!
+
+   ====================================== */
+.register-wrapper {
+    background-image: -webkit-linear-gradient(135deg, hsl(260, 70%, 60%) 30%, hsl(278, 70%, 70%) 90%);
+    background-image: linear-gradient(135deg, hsl(260, 70%, 60%) 30%, hsl(278, 70%, 70%) 90%);
+  
+    font-family: Arial, Helvetica, sans-serif;
+    color: hsl(177, 95%, 78%);
+    font-size: 1rem;
+  
+    position: relative;
+    z-index: 3;
+    padding: 100px;
+}
+
+.register-wrapper * {
+    box-sizing: border-box;
+}
+
+.register-wrapper form input{
+    display: inline-block;
+    width: 100%;
+    padding:0 20px;
+    line-height: 50px;
+    background: white;
+    border: solid 1.5px hsl(270, 70%, 90%);
+    border-bottom-width: 3px;
+    border-radius: 5px;
+    -webkit-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+    outline: none;
+}
+
+.register-wrapper form input:not(:last-child){
+    margin-bottom: 20px;
+    /* Affected only the first two wrappers, not the create my account button
+    as it is the "last-child"*/
+}
+
+.register-wrapper form input[type="email"]:focus,
+.register-wrapper form input[type="email"]:active,
+.register-wrapper form input[type="password"]:focus,
+.register-wrapper form input[type="password"]:active {
+ border-color: hsl(0, 0%, 60%)   
+}
+
+.register-wrapper form input[type = "submit"]{
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 20px;
+    cursor: pointer;
+    background-color: hsl(290, 80%, 70%);
+    background-size: 20px 20px;
+    background-image: -webkit-linear-gradient(
+        45deg,
+        hsla(0, 0%, 100%, 15%) 25%,
+         hsla(360, 0%, 0%, 0%) 25%,
+         hsla(360, 0%, 0%, 0%) 50%,
+         hsla(0, 0%, 100%, 15%) 50%,
+         hsla(0, 0%, 100%, 15%) 75%,
+         hsla(360, 0%, 0%, 0%) 75%,
+         hsla(360, 0%, 0%, 0%));
+         border: solid 2px hsl(290, 80%, 40%);
+         border-bottom-width: 4px;
+         color: white;
+         outline: none;
+         -webkit-transition: all 0.3s ease;
+         transition: all 0.3s ease;
+}
+
+.register-wrapper form input[type="submit"]:hover{
+    background-size: 60px 60px;
+}
+
+.register-title{
+    font-size: 1.4rem;
+    padding-bottom: 20px;
+    margin: 0 0 20px; 
+    border-bottom: dashed 1px #e6e6e6;
+}
+.register-block{
+    position: relative;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    padding: 30px;
+    background: hsla(260, 80%, 90%, 40%);
+    border: solid hsla(360, 0%, 40%, 0%);
+    border-radius: 5%;
+
+}
+
+
+
+
+
+/* This is for card shuffle effect */
+
+/* .register-block::before,
+.register-block::after
+{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: hsla(260, 80%, 90%, 40%);
+    border: solid 1px hsla(360, 0%, 40%, 0%);
+
+    border-radius: 5px;
+    -webkit-transform: scale(0.9) translate(0.0);
+    transform: scale(0.9) translate(0.0);
+    transition: all 0.3s ease;
+}
+
+.register-block::after{
+    transition-delay: .5s;
+}
+.register-block:hover::before{
+    -webkit-transform: scale(0.96) translate(0.16px);
+            transform: scale(0.96) translate(0.16px);
+    z-index: -1;
+}
+
+.register-block:hover::after{
+    -webkit-transform: scale(0.92) translate(0.32px);
+            transform: scale(0.92) translate(0.32px);
+    z-index: -2;
+} */
